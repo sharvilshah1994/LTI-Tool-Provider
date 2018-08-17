@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>LTI Tool Producer</title>
+</head>
+<body>
+<h1>Validation Success</h1>
+<div th:hidden="${consumerUrlExists}">
+    <form method="POST" th:action="${consumerUrl}">
+        <input type="hidden" value="75" name="lis_result_score" id="lis_result_score">
+        <input type="submit" value="Send scores">
+    </form>
+</div>
+</body>
+</html>
